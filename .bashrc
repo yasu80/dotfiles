@@ -160,6 +160,6 @@ kitssh(){
 
 #Git
 
-alias gs="git log"
+alias gl="git log"
 alias stat="git status"
 
