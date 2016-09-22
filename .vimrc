@@ -38,6 +38,13 @@ inoremap <leader>js <script><CR><CR>//<CR></script>
 "----------xxxxxx----------
 "**************************
 
+"***********html***********
+"----------xxxxxx----------
+inoremap <leader>h <!DOCTYPE HTML><CR><html><CR><meta charset=utf-8><CR><title></title><CR></head><CR><body><CR><body><CR></html>
+"----------xxxxxx----------
+"**************************
+
+
 "color
 hi Comment ctermfg=Cyan
 hi Special ctermfg=Lightblue
