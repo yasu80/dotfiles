@@ -40,7 +40,7 @@ inoremap <leader>js <script><CR><CR>//<CR></script>
 
 "***********html***********
 "----------xxxxxx----------
-inoremap <leader>h <!DOCTYPE HTML><CR><html><CR><meta charset=utf-8><CR><title></title><CR></head><CR><body><CR><body><CR></html>
+inoremap <leader>html <!DOCTYPE HTML><CR><html><CR><meta charset=utf-8><CR><title></title><CR></head><CR><body><CR><body><CR></html>
 "----------xxxxxx----------
 "**************************
 
