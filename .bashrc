@@ -121,15 +121,27 @@ fi
 eval `dircolors ~/dotfiles/mycolors`
 alias ls='ls -F --color=auto'
 
+#untypo
+
+alias ks='ls'
+#alias ';s'='ls'
+alias sl='ls'
+
+alias xs='cd $1'
+
+#motion
 alias ws='cd ~/Documents/workspace'
 alias web='cd ~/Documents/workspace/web' 
 alias js='cd ~/Documents/workspace/web/js' 
 alias robots='cd ~/Documents/workspace/robots' 
+alias src='cd catkin_ws/src' 
 alias dc='cd ~/Documents/' 
 alias dw='cd ~/Downloads/' 
 alias practice='cd ~/Documents/practice/' 
 alias sandbox='cd ~/Documents/sandbox' 
 alias dotfiles='cd ~/dotfiles' 
+
+#settingFiles
 alias bashrc='vi ~/dotfiles/.bashrc' 
 alias vimrc='vi ~/dotfiles/.vimrc' 
 
@@ -137,5 +149,12 @@ alias vimrc='vi ~/dotfiles/.vimrc'
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 
+#ROS
 source /opt/ros/kinetic/setup.bash
-source /opt/ros/kinetic/setup.bash
+
+
+#Network
+kitssh(){
+    ssh -l $1 remote-t.isc.kyutech.ac.jp
+}
+
