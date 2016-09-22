@@ -124,7 +124,7 @@ alias ls='ls -F --color=auto'
 #untypo
 
 alias ks='ls'
-#alias ';s'='ls'
+
 alias sl='ls'
 
 alias xs='cd $1'
@@ -157,4 +157,9 @@ source /opt/ros/kinetic/setup.bash
 kitssh(){
     ssh -l $1 remote-t.isc.kyutech.ac.jp
 }
+
+#Git
+
+alias gs="git log"
+alias stat="git status"
 
