@@ -118,6 +118,10 @@ if ! shopt -oq posix; then
   fi
 fi
 
+#PATH_2_~/shell
+export PATH="$PATH":/home/yasu16/shells
+
+#coloring
 eval `dircolors ~/dotfiles/mycolors`
 alias ls='ls -F --color=auto'
 
