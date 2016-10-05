@@ -1,3 +1,4 @@
+#isc ver 1.0.0 yasubash
 #managing in /home/yasu16/dotfiles/
 
 # ~/.bashrc: executed by bash(1) for non-login shells.
@@ -150,11 +151,11 @@ alias bashrc='vi ~/dotfiles/.bashrc'
 alias vimrc='vi ~/dotfiles/.vimrc' 
 
 # rbenv setting
-export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
+#export PATH="$HOME/.rbenv/bin:$PATH"
+#eval "$(rbenv init -)"
 
 #ROS
-source /opt/ros/kinetic/setup.bash
+#source /opt/ros/kinetic/setup.bash
 
 
 #Network
@@ -166,4 +167,7 @@ kitssh(){
 
 alias gl="git log"
 alias stat="git status"
+
+#colorsetting_why_i_rejected_dircolor_atKITISC????
+LS_COLORS=$LS_COLORS:'di=0;33:' ; export LS_COLORS
 
