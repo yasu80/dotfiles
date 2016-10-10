@@ -121,6 +121,10 @@ fi
 #PATH_2_~/shell
 export PATH="$PATH":/home/yasu16/shells
 
+#shells
+
+alias srcd=". srcd.sh"
+
 #coloring
 eval `dircolors ~/dotfiles/mycolors`
 alias ls='ls -F --color=auto'
@@ -133,8 +137,10 @@ alias sl='ls'
 
 alias xs='cd $1'
 
+
 #motion
 alias ws='cd ~/Documents/workspace'
+alias workspace='ws'
 alias web='cd ~/Documents/workspace/web' 
 alias js='cd ~/Documents/workspace/web/js' 
 alias robots='cd ~/Documents/workspace/robots' 
@@ -144,6 +150,8 @@ alias dw='cd ~/Downloads/'
 alias practice='cd ~/Documents/practice/' 
 alias sandbox='cd ~/Documents/sandbox' 
 alias dotfiles='cd ~/dotfiles' 
+alias shells="cd ~/shells"
+alias cirkit5="cd ~/Documents/workspace/robots/cirkit5"
 
 #settingFiles
 alias bashrc='vi ~/dotfiles/.bashrc' 
@@ -155,6 +163,7 @@ eval "$(rbenv init -)"
 
 #ROS
 source /opt/ros/kinetic/setup.bash
+source /home/yasu16/Documents/workspace/robots/cirkit5/fifth_robot_pkg/devel/setup.bash
 
 
 #Network

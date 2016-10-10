@@ -8,11 +8,11 @@ set wrapscan
 set number
 set title
 set list
+set listchars=tab:»-,trail:-,nbsp:%,eol:↲
 syntax on
 imap <C-c>inc #include <>
 imap <C-c>main int main( int argc, char* argv[]) {<CR><CR>return 0;<CR>}
-imap <C-c>mainc #include <stdio.h><CR>int main( int argc,char* argv[]) {<CR><CR>return 0;<CR>}
-
+imap <C-c>mainc #include <stdio.h><CR>int main( int argc,char* argv[]) {<CR><CR>return 0;<CR>
 imap {} {}<Left>
 imap () ()<Left>
 imap "" ""<Left>
