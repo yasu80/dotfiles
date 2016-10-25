@@ -44,6 +44,10 @@ inoremap <leader>html <!DOCTYPE HTML><CR><html><CR><meta charset=utf-8><CR><titl
 "----------xxxxxx----------
 "**************************
 
+" syntaxes
+
+autocmd BufRead,BufNewFile *.launch setfiletype roslaunch
+
 
 "color
 hi Comment ctermfg=Cyan

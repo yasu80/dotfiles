@@ -1,0 +1,9 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =7
+let g:netrw_dirhist_1='/home/yasu16/Documents/workspace/robots/cirkit5/fifth_robot_pkg/src/radio_controller/joy_adapter'
+let g:netrw_dirhist_2='/home/yasu16/Documents/workspace/robots/cirkit5/fifth_robot_pkg/src/radio_controller/joy_adapter/src'
+let g:netrw_dirhist_3='/home/yasu16/Documents/workspace/robots/cirkit5/fifth_robot_pkg/.git/modules/src/third_party/ypspur_ros_bridge'
+let g:netrw_dirhist_4='/home/yasu16/Documents/workspace/robots/cirkit5/fifth_robot_pkg/src/broadcasters/static_tf'
+let g:netrw_dirhist_5='/home/yasu16/Documents/workspace/robots/cirkit5/fifth_robot_pkg/.git/hooks'
+let g:netrw_dirhist_6='/home/yasu16/Documents/workspace/robots/cirkit5/fifth_robot_pkg/src/fifth_robot_launcher/launch'
+let g:netrw_dirhist_7='/home/yasu16/Documents/workspace/robots/cirkit5/fifth_robot_pkg/src/fifth_robot_launcher/ypspur'
