@@ -150,6 +150,12 @@ alias dotfiles='cd ~/dotfiles'
 alias bashrc='vi ~/dotfiles/.bashrc' 
 alias vimrc='vi ~/dotfiles/.vimrc' 
 
+#tools
+alias pdf='evince' 
+alias showpdf='evince' 
+
+alias display='eog' 
+alias image='eog' 
 # rbenv setting
 #export PATH="$HOME/.rbenv/bin:$PATH"
 #eval "$(rbenv init -)"
