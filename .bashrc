@@ -168,7 +168,7 @@ source /home/yasu16/Documents/workspace/robots/cirkit5/fifth_robot_pkg/devel/set
 
 #Network
 kitssh(){
-    ssh -l $1 remote-t.isc.kyutech.ac.jp
+    ssh -l $1 $2 remote-t.isc.kyutech.ac.jp
 }
 
 #Git
