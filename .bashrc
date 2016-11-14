@@ -155,6 +155,7 @@ alias cirkit5="cd ~/Documents/workspace/robots/cirkit5"
 
 #settingFiles
 alias bashrc='vi ~/dotfiles/.bashrc' 
+alias sb='source ~/.bashrc' 
 alias vimrc='vi ~/dotfiles/.vimrc' 
 
 # rbenv setting
@@ -170,7 +171,14 @@ source /home/yasu16/Documents/workspace/robots/cirkit5/fifth_robot_pkg/devel/set
 kitssh(){
     ssh -l $1 $2 remote-t.isc.kyutech.ac.jp
 }
+alias kitscp='echo -e "[USAGE:]\n>kitscp_dl remote_target local_destination\n>kitscp_up local_target remote_destination"'
 
+kitscp_dl(){
+    scp kit:/home/t/p111026h/$1 $2
+}
+kitscp_up(){
+    scp $1 kit:/home/t/p111026h/$2
+}
 #Git
 
 alias gl="git log"
