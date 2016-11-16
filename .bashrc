@@ -139,6 +139,11 @@ alias xs='cd $1'
 
 
 #motion
+
+cd(){
+   builtin cd "$@" && ls -avF --color=auto
+}
+
 alias ws='cd ~/Documents/workspace'
 alias workspace='ws'
 alias web='cd ~/Documents/workspace/web' 
@@ -152,6 +157,7 @@ alias sandbox='cd ~/Documents/sandbox'
 alias dotfiles='cd ~/dotfiles' 
 alias shells="cd ~/shells"
 alias cirkit5="cd ~/Documents/workspace/robots/cirkit5"
+alias arc="cd /home/yasu16/Documents/workspace/robots/arc"
 
 #settingFiles
 alias bashrc='vi ~/dotfiles/.bashrc' 
