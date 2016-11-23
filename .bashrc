@@ -146,6 +146,8 @@ cd(){
 
 alias ws='cd ~/Documents/workspace'
 alias workspace='ws'
+alias sound="cd /usr/share/sounds/ubuntu/stereo"
+
 alias web='cd ~/Documents/workspace/web' 
 alias js='cd ~/Documents/workspace/web/js' 
 alias robots='cd ~/Documents/workspace/robots' 
@@ -158,6 +160,11 @@ alias dotfiles='cd ~/dotfiles'
 alias shells="cd ~/shells"
 alias cirkit5="cd ~/Documents/workspace/robots/cirkit5"
 alias arc="cd /home/yasu16/Documents/workspace/robots/arc"
+#specify image as your xxxing loving ha-ha
+alias notify="echo -e '(´・ω・｀)らんらん♪システムメッセージよー\n(´・ω・｀)おほーっ,うまいこと終わったわよ\n（゜p゜）. o O (うまく行ったので出荷よー)\n(´・ω・｀)そんなー'  && paplay /usr/share/sounds/ubuntu/stereo/desktop-login.ogg && eog ~/dotfiles/images/notify_default"
+alias notify_failue="echo -e '\n(´・ω・｀)らんらん♪システムメッセージよー\n(´・ω・｀)なんかエラーしてるわね\n（゜p゜）. o O (エラー豚は出荷よー)\n(´・ω・｀)そんなー' && paplay /usr/share/sounds/ubuntu/stereo/dialog-question.ogg && eog ~/dotfiles/images/notify_failue"
+#$alias notify="echo -e シェルメッセージ:できたよ\\nステータス1 && paplay /usr/share/sounds/ubuntu/stereo/desktop-login.ogg && eog ~/dotfiles/images/notify_default "
+#$alias notify_failue="echo -e "シェルメッセージ:ダメでした\n" && paplay /usr/share/sounds/ubuntu/stereo/dialog-question.ogg && eog ~/dotfiles/images/notify_failue && p"
 
 #settingFiles
 alias bashrc='vi ~/dotfiles/.bashrc' 
@@ -171,6 +178,10 @@ eval "$(rbenv init -)"
 #ROS
 source /opt/ros/kinetic/setup.bash
 source /home/yasu16/Documents/workspace/robots/cirkit5/fifth_robot_pkg/devel/setup.bash
+source /home/yasu16/Documents/workspace/robots/arc/iai_kinect_installer/devel/setup.bash
+
+PATH="$PATH"://home/yasu16/Documents/workspace/processing-3.2.3
+
 
 
 #Network
@@ -185,8 +196,15 @@ kitscp_dl(){
 kitscp_up(){
     scp $1 kit:/home/t/p111026h/$2
 }
+
+#notify_sucess(){
+#   if [ $?=0 ]; then notify
+#      else notify_failue
+#   fi
+#}
+
 #Git
 
 alias gl="git log"
 alias stat="git status"
-
+alias ranran="echo -E '(´・ω・｀)'"
