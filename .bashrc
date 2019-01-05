@@ -1,4 +1,4 @@
-#managing in /home/yasu17/dotfiles/
+#managing in /home/yasu/dotfiles/
 
 # ~/.bashrc: executed by bash(1) for non-login shells.
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
@@ -120,7 +120,7 @@ if ! shopt -oq posix; then
 fi
 
 #PATH_2_~/shell
-export PATH="$PATH":/home/yasu17/shells
+export PATH="$PATH":/home/yasu/shells
 
 #shells
 
@@ -162,8 +162,8 @@ alias sandbox='cd ~/sandbox'
 alias dotfiles='cd ~/dotfiles' 
 alias shells="cd ~/shells"
 alias cirkit5="cd ~/workspace/robots/cirkit5"
-alias drive="cd /media/yasu17/DATA"
-alias data="cd /media/yasu17/DATA"
+alias drive="cd /media/yasu/DATA"
+alias data="cd /media/yasu/DATA"
 #specify image as your xxxing loving ha-ha
 #$alias notify="echo -e シェルメッセージ:できたよ\\nステータス1 && paplay /usr/share/sounds/ubuntu/stereo/desktop-login.ogg && eog ~/dotfiles/images/notify_default "
 #$alias notify_failue="echo -e "シェルメッセージ:ダメでした\n" && paplay /usr/share/sounds/ubuntu/stereo/dialog-question.ogg && eog ~/dotfiles/images/notify_failue && p"
@@ -179,9 +179,9 @@ alias vimrc='vi ~/dotfiles/.vimrc'
 
 #ROS
 source /opt/ros/kinetic/setup.bash
-source /home/yasu17/workspace/robots/fifth_robot_pkg/devel/setup.bash
+source /home/yasu/workspace/robots/fifth_robot_pkg/devel/setup.bash
 
-PATH="$PATH"://home/yasu17/workspace/processing-3.2.3
+PATH="$PATH"://home/yasu/workspace/processing-3.2.3
 
 alias rc="roscore"
 
@@ -217,3 +217,4 @@ alias st="git status"
 alias bye="exit"
 
 alias elog="vi /var/log/syslog"
+alias s='sudo'
