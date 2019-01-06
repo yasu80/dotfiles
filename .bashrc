@@ -218,3 +218,8 @@ alias bye="exit"
 
 alias elog="vi /var/log/syslog"
 alias s='sudo'
+
+#LaTeX
+
+alias makeit="latexmk"
+
