@@ -1,7 +1,7 @@
 "Managing in /home/yasu16/dotfiles/.vimrc
 set expandtab
-set tabstop=3
-set shiftwidth=3
+set tabstop=2
+set shiftwidth=2
 set smartindent
 set ignorecase
 set wrapscan

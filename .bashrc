@@ -1,4 +1,4 @@
-#managing in /home/yasu16/dotfiles/
+#managing in /home/yasu/dotfiles/
 
 # ~/.bashrc: executed by bash(1) for non-login shells.
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
@@ -58,11 +58,12 @@ if [ -n "$force_color_prompt" ]; then
     fi
 fi
 
-if [ "$color_prompt" = yes ]; then
-    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
-else
-    PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
-fi
+#if [ "$color_prompt" = yes ]; then
+#    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
+#else
+#    PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
+#fi
+    PS1='\u@mobile:\w$ '
 unset color_prompt force_color_prompt
 
 # If this is an xterm set the title to user@host:dir
@@ -119,7 +120,7 @@ if ! shopt -oq posix; then
 fi
 
 #PATH_2_~/shell
-export PATH="$PATH":/home/yasu16/shells
+export PATH="$PATH":/home/yasu/shells
 
 #shells
 
@@ -144,25 +145,26 @@ cd(){
    builtin cd "$@" && ls -avF --color=auto
 }
 
-alias ws='cd ~/Documents/workspace'
+alias ws='cd ~/workspace'
 alias workspace='ws'
 alias sound="cd /usr/share/sounds/ubuntu/stereo"
 
-alias web='cd ~/Documents/workspace/web' 
-alias js='cd ~/Documents/workspace/web/js' 
-alias robots='cd ~/Documents/workspace/robots' 
+alias web='cd ~/workspace/web' 
+alias js='cd ~/workspace/web/js' 
+alias html='cd ~/workspace/web/html'
+
+alias robots='cd ~/workspace/robots' 
 alias src='cd catkin_ws/src' 
 alias dc='cd ~/Documents/' 
 alias dw='cd ~/Downloads/' 
-alias practice='cd ~/Documents/practice/' 
-alias sandbox='cd ~/Documents/sandbox' 
+alias practice='cd ~/workspace/practice/' 
+alias sandbox='cd ~/sandbox' 
 alias dotfiles='cd ~/dotfiles' 
 alias shells="cd ~/shells"
-alias cirkit5="cd ~/Documents/workspace/robots/cirkit5"
-alias arc="cd /home/yasu16/Documents/workspace/robots/arc"
+alias cirkit5="cd ~/workspace/robots/cirkit5"
+alias drive="cd /media/yasu/DATA"
+alias data="cd /media/yasu/DATA"
 #specify image as your xxxing loving ha-ha
-alias notify="echo -e '(´・ω・｀)らんらん♪システムメッセージよー\n(´・ω・｀)おほーっ,うまいこと終わったわよ\n（゜p゜）. o O (うまく行ったので出荷よー)\n(´・ω・｀)そんなー'  && paplay /usr/share/sounds/ubuntu/stereo/desktop-login.ogg && eog ~/dotfiles/images/notify_default"
-alias notify_failue="echo -e '\n(´・ω・｀)らんらん♪システムメッセージよー\n(´・ω・｀)なんかエラーしてるわね\n（゜p゜）. o O (エラー豚は出荷よー)\n(´・ω・｀)そんなー' && paplay /usr/share/sounds/ubuntu/stereo/dialog-question.ogg && eog ~/dotfiles/images/notify_failue"
 #$alias notify="echo -e シェルメッセージ:できたよ\\nステータス1 && paplay /usr/share/sounds/ubuntu/stereo/desktop-login.ogg && eog ~/dotfiles/images/notify_default "
 #$alias notify_failue="echo -e "シェルメッセージ:ダメでした\n" && paplay /usr/share/sounds/ubuntu/stereo/dialog-question.ogg && eog ~/dotfiles/images/notify_failue && p"
 
@@ -172,23 +174,22 @@ alias sb='source ~/.bashrc'
 alias vimrc='vi ~/dotfiles/.vimrc' 
 
 # rbenv setting
-export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
+#export PATH="$HOME/.rbenv/bin:$PATH"
+#eval "$(rbenv init -)"
 
 #ROS
 source /opt/ros/kinetic/setup.bash
-source /home/yasu16/Documents/workspace/robots/cirkit5/fifth_robot_pkg/devel/setup.bash
-source /home/yasu16/Documents/workspace/robots/arc/iai_kinect_installer/devel/setup.bash
+source /home/yasu/workspace/robots/fifth_robot_pkg/devel/setup.bash
 
-PATH="$PATH"://home/yasu16/Documents/workspace/processing-3.2.3
+PATH="$PATH"://home/yasu/workspace/processing-3.2.3
 
-
+alias rc="roscore"
 
 #Network
 kitssh(){
     ssh -l $1 $2 remote-t.isc.kyutech.ac.jp
 }
-alias kitscp='echo -e "[USAGE:]\n>kitscp_dl remote_target local_destination\n>kitscp_up local_target remote_destination"'
+alias kitscp='echo -e "[USAGE:]\n>kitscp_dl remote_target local_destination\n>kitscp_up local_target remote_destination" '
 
 kitscp_dl(){
     scp kit:/home/t/p111026h/$1 $2
@@ -205,6 +206,15 @@ kitscp_up(){
 
 #Git
 
+alias g='git'
 alias gl="git log"
 alias stat="git status"
-alias ranran="echo -E '(´・ω・｀)'"
+alias st="git status"
+#gedit (){
+#   gedit $1 
+#}
+
+alias bye="exit"
+
+alias elog="vi /var/log/syslog"
+alias s='sudo'
